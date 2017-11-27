@@ -3,7 +3,7 @@ import * as webpack from 'webpack';
 import * as pkgJson from './package.json';
 
 export const config = <webpack.Configuration> {
-  context: `${__dirname}/src/client`,
+  context: `${__dirname}/src`,
   entry: {
     bundle: ['react-hot-loader/patch', 'core-js/es7', './index.tsx'],
   },
@@ -48,8 +48,8 @@ export const config = <webpack.Configuration> {
 
       // CSS
       {
-        test: /\.css$/,
-        loader: ['react-hot-loader/webpack', 'style-loader', 'css-loader'],
+        test: /\.s?[ac]ss$/,
+        loader: ['react-hot-loader/webpack', 'style-loader', 'css-loader', 'sass-loader'],
       },
 
       // ASSETS

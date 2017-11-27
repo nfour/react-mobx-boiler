@@ -2,6 +2,7 @@ import { observer, Provider } from 'mobx-react';
 import * as React from 'react';
 import { Route, Router, withRouter } from 'react-router';
 import { IStore } from '../../types';
+import Example from '../Example/Example';
 import './Root.scss';
 
 @(withRouter as any)

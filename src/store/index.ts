@@ -14,7 +14,7 @@ export const createStore = (): IStore => {
 
   const browserHistory = createHashHistory();
 
-  store.example = new Example(store);
+  store.example = new Example();
   store.routing = new RouterStore();
   store.history = syncHistoryWithStore(browserHistory, store.routing);
 
