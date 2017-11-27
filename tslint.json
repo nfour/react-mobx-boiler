@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "tslint-config-temando"
+  ],
+  "rules": {
+    "no-console": false,
+    "max-classes-per-file": false,
+    "no-default-export": false
+  }
+}
